@@ -1,139 +1,528 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MVS Bima | Health, Term & Travel Insurance</title>
-  <meta name="description" content="Health, term life and travel insurance from trusted insurance companies. Call or WhatsApp MVS Bima on 6301545182.">
-  <link rel="canonical" href="https://mvsbima.com/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230b5cad'/><path d='M16 6l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V9z' fill='white'/></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MVS Bima | Health, Term, Travel &amp; Motor Insurance Guidance</title>
+<meta name="description" content="MVS Bima helps you choose the right health, term, travel and motor insurance from trusted insurance companies. Free guidance. Call 6301545182.">
+<meta name="keywords" content="MVS Bima, health insurance, term insurance, travel insurance, motor insurance, car insurance, bike insurance, insurance advisor">
+<link rel="canonical" href="https://mvsbima.com/">
+<meta property="og:title" content="MVS Bima – Insurance guidance you can trust">
+<meta property="og:description" content="Health, term, travel and motor insurance from trusted companies. Call 6301545182.">
+<meta property="og:url" content="https://mvsbima.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z' fill='%230b5cab'/%3E%3Cpath d='m22 32 7 7 14-15' stroke='%23fff' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --primary:#0b5cab; --primary-dark:#083f78; --accent:#f59e0b; --green:#16a34a;
+  --ink:#0f1f33; --muted:#5b6b80; --bg:#ffffff; --soft:#f2f7fc; --line:#e3ebf4;
+  --radius:16px; --shadow:0 10px 30px rgba(11,92,171,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+h1,h2,h3{font-family:Poppins,Inter,sans-serif;line-height:1.2;color:var(--ink)}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.container{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--primary);background:#e6f0fb;padding:6px 12px;border-radius:999px;margin-bottom:14px}
+.section-head{text-align:center;max-width:640px;margin:0 auto 48px}
+.section-head h2{font-size:clamp(26px,4vw,38px);margin-bottom:12px}
+.section-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;cursor:pointer;transition:.2s}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-dark)}
+.btn-outline{border-color:var(--primary);color:var(--primary);background:#fff}
+.btn-outline:hover{background:var(--soft)}
+.btn-wa{background:#25d366;color:#fff}
+.btn-wa:hover{background:#1da851}
+.btn svg{width:18px;height:18px}
+
+/* Top bar + nav */
+.topbar{background:var(--primary-dark);color:#dbe8f7;font-size:14px}
+.topbar .container{display:flex;justify-content:flex-end;gap:24px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.topbar a:hover{color:#fff}
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .container{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Poppins,sans-serif;font-weight:700;font-size:22px;color:var(--primary-dark)}
+.logo svg{width:38px;height:38px}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+.nav ul a{font-weight:500;color:var(--ink)}
+.nav ul a:hover{color:var(--primary)}
+.menu-btn{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:.2s}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#eaf3fd 0%,#ffffff 55%,#fff7e8 100%);padding:80px 0 90px}
+.hero .container{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(32px,5vw,52px);margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--primary)}
+.hero p.lead{font-size:18px;color:var(--muted);margin-bottom:28px;max-width:540px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+.trust-row{display:flex;gap:28px;flex-wrap:wrap}
+.trust-row div{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--muted)}
+.trust-row svg{width:20px;height:20px;color:var(--green)}
+.hero-card{background:#fff;border-radius:24px;box-shadow:var(--shadow);padding:32px;border:1px solid var(--line)}
+.hero-card h3{font-size:20px;margin-bottom:6px}
+.hero-card p{color:var(--muted);font-size:14px;margin-bottom:20px}
+
+/* Form */
+.form-grid{display:grid;gap:14px}
+.form-grid label{font-size:13px;font-weight:600;color:var(--ink);display:block;margin-bottom:6px}
+.form-grid input,.form-grid select,.form-grid textarea{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:15px;background:#fbfdff;color:var(--ink)}
+.form-grid input:focus,.form-grid select:focus,.form-grid textarea:focus{outline:none;border-color:var(--primary);background:#fff}
+.form-grid .btn{width:100%;justify-content:center}
+.form-note{font-size:12px;color:var(--muted);text-align:center}
+
+/* Services */
+.services{background:#fff}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#cfe0f3}
+.card .icon{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px}
+.card .icon svg{width:28px;height:28px}
+.card h3{font-size:20px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px;margin-bottom:16px}
+.card ul{list-style:none;margin-bottom:20px;flex:1}
+.card li{font-size:14px;padding:4px 0 4px 24px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:10px;width:14px;height:8px;border-left:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(-45deg)}
+.card .link{font-weight:600;color:var(--primary);font-size:15px}
+.card .link:hover{text-decoration:underline}
+.i-health{background:#fde8ec;color:#e11d48}
+.i-term{background:#e6f0fb;color:var(--primary)}
+.i-travel{background:#e7f8ef;color:var(--green)}
+.i-motor{background:#fff3dc;color:#d97706}
+
+/* Why us */
+.why{background:var(--soft)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.why-item{background:#fff;border-radius:var(--radius);padding:26px;border:1px solid var(--line)}
+.why-item .num{width:44px;height:44px;border-radius:12px;background:var(--primary);color:#fff;display:grid;place-items:center;margin-bottom:14px}
+.why-item .num svg{width:22px;height:22px}
+.why-item h3{font-size:18px;margin-bottom:6px}
+.why-item p{color:var(--muted);font-size:15px}
+
+/* Process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+.step{text-align:center;padding:10px}
+.step::before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:56px;height:56px;margin:0 auto 16px;border-radius:50%;background:#fff;border:2px solid var(--primary);color:var(--primary);font-family:Poppins,sans-serif;font-weight:700;font-size:22px}
+.step h3{font-size:18px;margin-bottom:6px}
+.step p{color:var(--muted);font-size:15px}
+
+/* CTA band */
+.cta-band{background:linear-gradient(120deg,var(--primary) 0%,var(--primary-dark) 100%);color:#fff;padding:60px 0}
+.cta-band .container{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.cta-band h2{color:#fff;font-size:clamp(24px,3.5vw,34px);margin-bottom:6px}
+.cta-band p{color:#cfe2f7}
+.cta-band .btn-outline{background:#fff}
+
+/* FAQ */
+.faq-list{max-width:800px;margin:0 auto}
+details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#fff}
+summary{cursor:pointer;padding:18px 22px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;color:var(--primary);line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 22px 18px;color:var(--muted)}
+
+/* Contact */
+.contact{background:var(--soft)}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:start}
+.contact-info{display:grid;gap:16px}
+.info-box{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.info-box .icon{width:50px;height:50px;border-radius:12px;background:#e6f0fb;color:var(--primary);display:grid;place-items:center;flex-shrink:0}
+.info-box .icon svg{width:24px;height:24px}
+.info-box small{display:block;color:var(--muted);font-size:13px}
+.info-box strong{font-size:17px;word-break:break-word}
+.info-box a:hover strong{color:var(--primary)}
+.contact-form{background:#fff;border-radius:20px;border:1px solid var(--line);padding:30px;box-shadow:var(--shadow)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+/* Footer */
+footer{background:#0a1a2e;color:#aab8c8;padding:56px 0 24px;font-size:15px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:36px}
+footer .logo{color:#fff;margin-bottom:12px}
+footer h4{color:#fff;font-family:Poppins,sans-serif;font-size:16px;margin-bottom:14px}
+footer ul{list-style:none}
+footer li{padding:4px 0}
+footer a:hover{color:#fff}
+.disclaimer{border-top:1px solid #1d324c;padding-top:20px;font-size:13px;color:#7f91a6}
+.disclaimer p+p{margin-top:8px}
+
+/* Floating WhatsApp */
+.wa-float{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.2);z-index:60;transition:.2s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px}
+
+/* Responsive */
+@media (max-width:1000px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .why-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .hero .container,.contact-grid{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .menu-btn{display:block}
+  .nav ul{position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line);display:none;padding:8px 0}
+  .nav ul.open{display:flex}
+  .nav ul li{width:100%}
+  .nav ul a{display:block;padding:12px 20px}
+  .nav ul .btn{margin:8px 20px;justify-content:center}
+}
+@media (max-width:560px){
+  section{padding:60px 0}
+  .container{padding:0 16px}
+  .cards,.steps,.why-grid,.two,.foot-grid{grid-template-columns:1fr}
+  .topbar .container{justify-content:center;gap:14px;font-size:13px}
+  .hero{padding:48px 0 60px}
+  .hero-card,.contact-form{padding:22px}
+  .cta-band .container{flex-direction:column;align-items:flex-start}
+}
+</style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="site-header" id="top">
-    <div class="container nav">
-      <a href="#top" class="brand" aria-label="MVS Bima home">
-        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M16 6l8 3v6c0 5-3.4 9-8 11-4.6-2-8-6-8-11V9z"/></svg>
-        <span>MVS <strong>Bima</strong></span>
-      </a>
-      <a href="tel:+916301545182" class="btn btn-primary btn-sm">Call 6301545182</a>
-    </div>
-  </header>
+<div class="topbar">
+  <div class="container">
+    <a href="tel:+916301545182">📞 +91 63015 45182</a>
+    <a href="mailto:mvsbima@gmail.com">✉️ mvsbima@gmail.com</a>
+  </div>
+</div>
 
-  <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Health · Term Life · Travel</p>
-          <h1>Good insurance from <span class="hl">trusted companies.</span></h1>
-          <p class="lead">MVS Bima helps you and your family get the right health, term life and travel insurance. Call or WhatsApp us and we'll take care of the rest.</p>
-          <div class="hero-actions">
-            <a href="tel:+916301545182" class="btn btn-primary">Call Us</a>
-            <a href="https://wa.me/916301545182" target="_blank" rel="noopener" class="btn btn-whatsapp">WhatsApp Us</a>
+<header class="nav">
+  <div class="container">
+    <a href="#home" class="logo" aria-label="MVS Bima home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z" fill="#0b5cab"/><path d="m22 32 7 7 14-15" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      MVS<span>Bima</span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul id="menu">
+      <li><a href="#services">Insurance</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#faq">FAQs</a></li>
+      <li><a href="#contact" class="btn btn-primary">Get Free Advice</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="container">
+    <div>
+      <span class="eyebrow">Your Trusted Insurance Guide</span>
+      <h1>The right insurance, <em>explained simply</em> — for you and your family.</h1>
+      <p class="lead">MVS Bima helps you compare and choose health, term, travel and motor insurance from trusted insurance companies. Honest guidance, no confusing jargon, and support even after you buy.</p>
+      <div class="hero-actions">
+        <a href="tel:+916301545182" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          Call 63015 45182
+        </a>
+        <a href="https://wa.me/916301545182?text=Hi%20MVS%20Bima%2C%20I%20need%20help%20choosing%20insurance." target="_blank" rel="noopener" class="btn btn-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+      <div class="trust-row">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg>Free, no-obligation advice</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg>Trusted insurers only</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m5 12 5 5L20 7"/></svg>Claim support</div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>Get a free quote &amp; callback</h3>
+      <p>Tell us what you need — we'll get back to you with suitable options.</p>
+      <form class="form-grid lead-form" data-source="Quick quote">
+        <div><label for="q-name">Your name</label><input id="q-name" name="name" required placeholder="Full name"></div>
+        <div><label for="q-phone">Mobile number</label><input id="q-phone" name="phone" type="tel" required pattern="[0-9+\s-]{10,15}" placeholder="10-digit mobile number"></div>
+        <div><label for="q-type">Insurance type</label>
+          <select id="q-type" name="type" required>
+            <option value="">Select insurance</option>
+            <option>Health Insurance</option>
+            <option>Term Insurance</option>
+            <option>Travel Insurance</option>
+            <option>Motor Insurance</option>
+            <option>Not sure – need advice</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Request Callback</button>
+        <p class="form-note">Your request opens in WhatsApp so it reaches us instantly.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">What We Offer</span>
+      <h2>Insurance plans for every stage of life</h2>
+      <p>We guide you through plans from trusted insurance companies and help you pick the cover that truly fits your needs and budget.</p>
+    </div>
+    <div class="cards">
+      <article class="card" id="health">
+        <div class="icon i-health"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/><path d="M12 9v6M9 12h6"/></svg></div>
+        <h3>Health Insurance</h3>
+        <p>Protect your savings from rising medical costs with the right health cover.</p>
+        <ul>
+          <li>Individual &amp; family floater plans</li>
+          <li>Senior citizen health plans</li>
+          <li>Cashless hospital network</li>
+          <li>Top-up &amp; critical illness cover</li>
+        </ul>
+        <a href="#contact" class="link" data-type="Health Insurance">Get health quote →</a>
+      </article>
+      <article class="card" id="term">
+        <div class="icon i-term"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div>
+        <h3>Term Insurance</h3>
+        <p>Secure your family's financial future with high life cover at affordable premiums.</p>
+        <ul>
+          <li>High cover at low premium</li>
+          <li>Critical illness &amp; accident riders</li>
+          <li>Return of premium options</li>
+          <li>Tax benefits as per applicable laws</li>
+        </ul>
+        <a href="#contact" class="link" data-type="Term Insurance">Get term quote →</a>
+      </article>
+      <article class="card" id="travel">
+        <div class="icon i-travel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg></div>
+        <h3>Travel Insurance</h3>
+        <p>Travel worry-free in India or abroad with cover for the unexpected.</p>
+        <ul>
+          <li>International &amp; domestic trips</li>
+          <li>Medical emergencies abroad</li>
+          <li>Trip delay &amp; baggage loss</li>
+          <li>Student &amp; multi-trip plans</li>
+        </ul>
+        <a href="#contact" class="link" data-type="Travel Insurance">Get travel quote →</a>
+      </article>
+      <article class="card" id="motor">
+        <div class="icon i-motor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17H3v-5l2-5h11l3 5h2v5h-2"/><circle cx="7.5" cy="17" r="2"/><circle cx="16.5" cy="17" r="2"/><path d="M9.5 17h5M5 12h14"/></svg></div>
+        <h3>Motor Insurance</h3>
+        <p>Comprehensive and third-party cover for your car, bike or commercial vehicle.</p>
+        <ul>
+          <li>Car, two-wheeler &amp; commercial</li>
+          <li>New policy &amp; quick renewals</li>
+          <li>Zero depreciation add-ons</li>
+          <li>Cashless garage network</li>
+        </ul>
+        <a href="#contact" class="link" data-type="Motor Insurance">Get motor quote →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Why MVS Bima</span>
+      <h2>Guidance you can rely on</h2>
+      <p>Buying insurance shouldn't be confusing. We stay on your side — before you buy, and when you need to claim.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Trusted companies</h3><p>We work only with reputed, regulated insurance companies so your cover is in safe hands.</p></div>
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h12"/></svg></div><h3>Unbiased comparison</h3><p>We compare plans side by side and explain coverage, exclusions and costs clearly.</p></div>
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h3>Personal advisor</h3><p>Talk to a real person who understands your family, goals and budget.</p></div>
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Claim assistance</h3><p>We help you with documents and follow-ups so your claim process is smoother.</p></div>
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><h3>Timely renewals</h3><p>Reminders before your policy expires so you never lose cover or benefits.</p></div>
+      <div class="why-item"><div class="num"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>Free consultation</h3><p>Our guidance is free — ask as many questions as you like before you decide.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How It Works</span>
+      <h2>Get insured in 4 simple steps</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Share your needs</h3><p>Call, WhatsApp or fill the form with a few basic details.</p></div>
+      <div class="step"><h3>Compare options</h3><p>We shortlist suitable plans from trusted insurers and explain them.</p></div>
+      <div class="step"><h3>Choose &amp; buy</h3><p>Pick the plan you like — we help with the paperwork and payment.</p></div>
+      <div class="step"><h3>Ongoing support</h3><p>Renewal reminders and claim assistance whenever you need it.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="container">
+    <div>
+      <h2>Not sure which policy is right for you?</h2>
+      <p>Talk to MVS Bima today — friendly, free advice in minutes.</p>
+    </div>
+    <div class="hero-actions" style="margin:0">
+      <a href="tel:+916301545182" class="btn btn-outline">Call 63015 45182</a>
+      <a href="https://wa.me/916301545182" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQs</span>
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>Do you charge for your advice?</summary><p>No. Consultation with MVS Bima is free. We help you understand your options so you can make an informed decision.</p></details>
+      <details><summary>How much health insurance cover do I need?</summary><p>It depends on your city, age, family size and existing cover. As a starting point, many families consider at least ₹5–10 lakh. We'll help you work out a cover amount that suits your situation.</p></details>
+      <details><summary>What is the difference between term insurance and other life insurance?</summary><p>Term insurance is pure protection — it pays a large sum to your family if something happens to you during the policy term, at a much lower premium than savings-linked plans.</p></details>
+      <details><summary>Can you help me renew my existing car or bike insurance?</summary><p>Yes. Share your current policy details and we'll help you renew, compare options and suggest useful add-ons like zero depreciation.</p></details>
+      <details><summary>Will you help me when I need to make a claim?</summary><p>Yes. We assist with documentation and coordination with the insurance company to make the claim process as smooth as possible. Final claim decisions are made by the insurer as per policy terms.</p></details>
+      <details><summary>How do I get started?</summary><p>Simply call or WhatsApp us on 63015 45182, email mvsbima@gmail.com, or fill in the contact form below.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contact Us</span>
+      <h2>Let's find the right cover for you</h2>
+      <p>Reach out by phone, WhatsApp or email — or send us your details and we'll call you back.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a class="info-box" href="tel:+916301545182">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg></div>
+          <div><small>Call us</small><strong>+91 63015 45182</strong></div>
+        </a>
+        <a class="info-box" href="https://wa.me/916301545182" target="_blank" rel="noopener">
+          <div class="icon" style="background:#e3f9ec;color:#1da851"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg></div>
+          <div><small>WhatsApp</small><strong>+91 63015 45182</strong></div>
+        </a>
+        <a class="info-box" href="mailto:mvsbima@gmail.com">
+          <div class="icon" style="background:#fff3dc;color:#d97706"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></div>
+          <div><small>Email us</small><strong>mvsbima@gmail.com</strong></div>
+        </a>
+        <div class="info-box">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><small>Working hours</small><strong>Mon – Sat, 9:30 AM – 7:00 PM</strong></div>
+        </div>
+      </div>
+
+      <form class="contact-form form-grid lead-form" data-source="Contact form">
+        <div class="two">
+          <div><label for="c-name">Full name</label><input id="c-name" name="name" required placeholder="Your name"></div>
+          <div><label for="c-phone">Mobile number</label><input id="c-phone" name="phone" type="tel" required pattern="[0-9+\s-]{10,15}" placeholder="10-digit mobile"></div>
+        </div>
+        <div class="two">
+          <div><label for="c-email">Email (optional)</label><input id="c-email" name="email" type="email" placeholder="you@example.com"></div>
+          <div><label for="c-type">Insurance type</label>
+            <select id="c-type" name="type" required>
+              <option value="">Select insurance</option>
+              <option>Health Insurance</option>
+              <option>Term Insurance</option>
+              <option>Travel Insurance</option>
+              <option>Motor Insurance</option>
+              <option>Not sure – need advice</option>
+            </select>
           </div>
         </div>
-
-        <div class="quote-card">
-          <h2>Request a call back</h2>
-          <form id="callback-form" class="form" novalidate>
-            <label>Name
-              <input type="text" name="name" required autocomplete="name" placeholder="Your name">
-            </label>
-            <label>Mobile number
-              <input type="tel" name="phone" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel" placeholder="10-digit mobile">
-            </label>
-            <label>Insurance needed
-              <select name="type">
-                <option>Health Insurance</option>
-                <option>Term Life Insurance</option>
-                <option>Travel Insurance</option>
-              </select>
-            </label>
-            <button type="submit" class="btn btn-primary btn-block">Send on WhatsApp</button>
-            <p class="form-msg" role="status" aria-live="polite"></p>
-          </form>
+        <div><label for="c-msg">Message (optional)</label><textarea id="c-msg" name="message" rows="4" placeholder="E.g. family of 4, need health cover of ₹10 lakh"></textarea></div>
+        <div class="two">
+          <button type="submit" class="btn btn-wa">Send via WhatsApp</button>
+          <button type="submit" class="btn btn-outline" data-via="email">Send via Email</button>
         </div>
-      </div>
-    </section>
-
-    <!-- Products -->
-    <section class="section" id="insurance">
-      <div class="container">
-        <div class="section-head">
-          <h2>Our insurance</h2>
-        </div>
-
-        <div class="product-grid">
-          <article class="product">
-            <div class="icon icon-health" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.3C1.2 8.5 3.3 5 6.8 5c2 0 3.4 1.1 4.2 2.3h2C13.8 6.1 15.2 5 17.2 5c3.5 0 5.6 3.5 4.3 6.7C19.5 16.4 12 21 12 21z"/><path d="M12 9v6M9 12h6" class="stroke-w"/></svg>
-            </div>
-            <h3>Health Insurance</h3>
-            <p>Covers hospital bills for you and your family, with cashless treatment at network hospitals.</p>
-          </article>
-
-          <article class="product">
-            <div class="icon icon-term" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.2 8.3-8 9.5C7.2 20.3 4 16.6 4 12V6z"/><path d="M8.5 12l2.5 2.5 4.5-5" class="stroke-w"/></svg>
-            </div>
-            <h3>Term Life Insurance</h3>
-            <p>Large life cover at a low premium, so your family is financially secure if something happens to you.</p>
-          </article>
-
-          <article class="product">
-            <div class="icon icon-travel" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 00-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
-            </div>
-            <h3>Travel Insurance</h3>
-            <p>Covers medical emergencies, trip cancellations and lost baggage when you travel abroad.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="section cta" id="contact">
-      <div class="container narrow center">
-        <h2>Contact us</h2>
-        <p>We're happy to help with any insurance question.</p>
-        <div class="contact-list">
-          <a class="contact-item" href="tel:+916301545182">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>
-            <span>+91 63015 45182</span>
-          </a>
-          <a class="contact-item" href="https://wa.me/916301545182" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
-            <span>WhatsApp 6301545182</span>
-          </a>
-          <a class="contact-item" href="mailto:mvsbima@gmail.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V6a1 1 0 011-1zm9 7.2L4 7.3V17h16V7.3z"/></svg>
-            <span>mvsbima@gmail.com</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container disclaimer">
-      <!-- TODO: Fill in your IRDAI registration details. Display is mandatory for intermediaries. -->
-      <p><strong>MVS Bima</strong> | IRDAI Registration No. [XXXX] | Category: [Direct Broker / Corporate Agent / POSP]</p>
-      <p>Insurance is the subject matter of solicitation. For more details on risk factors, terms and conditions, please read the sales brochure carefully before concluding a sale. Policies are issued by the respective insurance companies.</p>
-      <p>© <span id="year"></span> MVS Bima · <a href="privacy.html">Privacy Policy</a></p>
+        <p class="form-note">We respect your privacy. Your details are used only to contact you about your insurance request. <a href="privacy.html" style="text-decoration:underline">Privacy Policy</a></p>
+      </form>
     </div>
-  </footer>
+  </div>
+</section>
+</main>
 
-  <a class="wa-float" href="https://wa.me/916301545182" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.6-.1 1.2z"/></svg>
-  </a>
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#home" class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4 8 13v17c0 15 10 26 24 30 14-4 24-15 24-30V13z" fill="#0b5cab"/><path d="m22 32 7 7 14-15" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>MVS<span>Bima</span></a>
+        <p>Helping individuals and families choose the right health, term, travel and motor insurance from trusted insurance companies.</p>
+      </div>
+      <div>
+        <h4>Insurance</h4>
+        <ul>
+          <li><a href="#health">Health Insurance</a></li>
+          <li><a href="#term">Term Insurance</a></li>
+          <li><a href="#travel">Travel Insurance</a></li>
+          <li><a href="#motor">Motor Insurance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+916301545182">📞 +91 63015 45182</a></li>
+          <li><a href="mailto:mvsbima@gmail.com">✉️ mvsbima@gmail.com</a></li>
+          <li><a href="https://wa.me/916301545182" target="_blank" rel="noopener">💬 WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Disclaimer:</strong> Insurance is the subject matter of solicitation. MVS Bima provides guidance to help you understand and compare insurance products. Policies are issued by the respective insurance companies, and coverage, premiums and claim settlement are subject to their terms and conditions. Please read the policy documents carefully before buying.</p>
+      <p>© <span id="year">2026</span> MVS Bima · mvsbima.com · All rights reserved. · <a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<a class="wa-float" href="https://wa.me/916301545182?text=Hi%20MVS%20Bima%2C%20I%20need%20help%20with%20insurance." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  var PHONE = '916301545182', EMAIL = 'mvsbima@gmail.com';
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  btn.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); }); });
+
+  // "Get quote" links preselect the insurance type in the contact form
+  document.querySelectorAll('.card .link').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('c-type').value = a.dataset.type; });
+  });
+
+  // Lead forms -> WhatsApp or email
+  document.querySelectorAll('.lead-form').forEach(function(form){
+    var via = 'whatsapp';
+    form.querySelectorAll('button[type=submit]').forEach(function(b){
+      b.addEventListener('click', function(){ via = b.dataset.via || 'whatsapp'; });
+    });
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var d = new FormData(form), lines = ['New enquiry from mvsbima.com (' + form.dataset.source + ')'];
+      [['name','Name'],['phone','Mobile'],['email','Email'],['type','Insurance'],['message','Message']].forEach(function(f){
+        var v = (d.get(f[0]) || '').toString().trim();
+        if (v) lines.push(f[1] + ': ' + v);
+      });
+      var text = lines.join('\n');
+      if (via === 'email') {
+        location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Insurance enquiry – ' + (d.get('type') || '')) + '&body=' + encodeURIComponent(text);
+      } else {
+        window.open('https://wa.me/' + PHONE + '?text=' + encodeURIComponent(text), '_blank', 'noopener');
+      }
+      via = 'whatsapp';
+    });
+  });
+})();
+</script>
 </body>
 </html>
